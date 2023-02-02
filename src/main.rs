@@ -6,9 +6,9 @@ fn main() {
 
     println!("Define the two letters you wanna replace ?! x -with-> y");
     io::stdin().read_line(&mut user_replace_input).expect("Err Reading input");
-    let mut letters_to_replace:(char,char) = (' ',' ');
+    let letters_to_replace:(char,char) = (' ',' ');
     let letters_to_replace = chars_to_replace(user_replace_input,letters_to_replace);
-    println!("Letter to change are {} & {}",letters_to_replace.0,letters_to_replace.1);
+    println!("Change letter {} with a {}",letters_to_replace.0,letters_to_replace.1);
 
     println!("Add the text you wanna change");
     io::stdin().read_line(&mut user_input_text).expect("Err reading your text");
